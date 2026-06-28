@@ -26,7 +26,7 @@ project/
 ├── scripts/
 │   ├── fetch_fixtures.py   ← scrape articles via Firecrawl
 │   └── generate_baseline.py ← run pipeline on all fixtures and commit the output
-└── main.py                 ← package entry point
+└── main.py                 ← CLI to run the pipeline on any article file
 ```
 
 ---
@@ -41,7 +41,36 @@ uv sync
 export OPENAI_API_KEY=sk-...
 ```
 
-The pipeline defaults to `gpt-5.4-mini`. To use a different model, pass `model=` to `run_pipeline()` directly.
+The pipeline defaults to `gpt-5.4-mini`. Override it with `--model` on the CLI or `model=` when calling `run_pipeline()` directly.
+
+---
+
+## Running the Pipeline
+
+Run the extractor on any article text file:
+
+```bash
+uv run python main.py data/fixtures/articles/01_stg_logistics_bankruptcy.txt
+```
+
+Example output:
+
+```json
+{
+  "entity": "STG Logistics, Inc.",
+  "event_type": "chapter_11",
+  "severity": 4,
+  "confidence": 0.97
+}
+```
+
+Use a different model:
+
+```bash
+uv run python main.py path/to/article.txt --model gpt-5.4-mini
+```
+
+The file should contain raw article text (plain text or scraped markdown). For fetching articles from URLs, use `scripts/fetch_fixtures.py` first, then point `main.py` at the saved file.
 
 ---
 
