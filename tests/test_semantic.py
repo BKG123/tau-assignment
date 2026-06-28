@@ -124,7 +124,7 @@ def test_resolution_event_type_not_attack(pipeline_results, metadata):
         # Allow labor_disruption for 09 since the resolution is tentative
         if fx["id"] == "09":
             continue
-        assert result["event_type"] not in {"geopolitical_attack", "maritime_attack", "shipping_attack"}, (
+        assert result["event_type"] not in attack_types, (
             f"[{fx['id']}] Resolution article classified as attack type '{result['event_type']}'\n"
             f"  Article: {fx['label']}"
         )
