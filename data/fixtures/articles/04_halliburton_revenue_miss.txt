@@ -1,69 +1,125 @@
-<!-- fixture_id: 04 | source: https://www.benzinga.com/25/01/43138748/halliburton-misses-q4-revenue-estimates-analyst-doubts-2025-growth-in-middle-east -->
+<!-- fixture_id: 04 | source: https://www.reuters.com/business/energy/halliburtons-fourth-quarter-profit-beats-estimates-2025-01-22/ -->
 
-# Halliburton's Soft Revenue Lags Estimates, Goldman Sachs Analyst Seeks Clarity On 2025 Activities
+[Skip to main content](https://www.reuters.com/business/energy/halliburtons-fourth-quarter-profit-beats-estimates-2025-01-22/#main-content)
 
-**Benzinga | January 22, 2025**
+[Exclusive news, data and analytics for financial market professionalsLearn more aboutRefinitiv](https://www.reuters.com/differentiator/)
 
-Halliburton Company (NYSE: HAL) shares are trading lower on Wednesday after the oilfield services giant reported a slight fourth-quarter revenue miss against consensus estimates.
+![Oil production equipment is seen in a Halliburton yard in Williston](https://www.reuters.com/resizer/v2/3E2QIJ37VJPQNGUWBV7PH2HB7U.jpg?auth=03d32a111710d0ae8bffad4c9e7da0ed4e346a343c42943d98baeafe3dc45dcf&width=1920&quality=80)
 
-Goldman Sachs analyst Neil Mehta reiterated the Buy rating on the stock, with a price forecast of $36.
+Oil production equipment is seen in a Halliburton yard in Williston, North Dakota, U.S., April 30, 2016. REUTERS/Andrew Cullen/File Photo [Purchase Licensing Rights, opens new tab](https://www.reutersconnect.com/item/oil-production-equipment-is-seen-in-a-halliburton-yard-in-williston/dGFnOnJldXRlcnMuY29tLDIwMTg6bmV3c21sX1JDMTlBMDFGMTM1MA%3D%3D/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead)
 
----
+- Summary
+- Companies
 
-## Q4 2024 Results
+- Shares fall 1% despite beating Q4 profit estimates
+- North America revenue to decrease due to lower equipment prices
+- International revenue seen flat due to lower Mexico activity
 
-Halliburton reported a fourth-quarter revenue decline of 2.3% year-over-year to **$5.610 billion**, missing the consensus estimate of **$5.63 billion** — a shortfall of approximately $20–30 million on a $5.6 billion base.
+Jan 22 (Reuters) - Halliburton [(HAL.N), opens new tab](https://www.reuters.com/markets/companies/HAL.N) expects flat to slightly lower revenues in 2025, the oilfield service company said on Wednesday, as it warned of softer activity in North America and Mexico.
 
-Adjusted net income per share came in at **$0.70**, matching the Zacks Consensus Estimate but below the year-ago quarter's profit of $0.86 per diluted share.
+Shares of the company, which beat analysts' estimates for fourth-quarter profit by 1 cent, were down 1% at $29.23 in midday trading.
 
-Completion and Production revenue fell 4.2% year-over-year to $3.2 billion, with operating income of $629 million, lower than last year's $716 million. The decline was driven primarily by:
+The Reuters Power Up newsletter provides everything you need to know about the global energy industry. Sign up [here.](https://www.reuters.com/newsletters/reuters-power-up/?location=article-paragraph&redirectUrl=%2Fbusiness%2Fenergy%2Fhalliburtons-fourth-quarter-profit-beats-estimates-2025-01-22%2F)
 
-- Reduced stimulation activity in North America
-- Lower pressure pumping services in Latin America
+The tepid outlook echoed that of rival SLB [(SLB.N), opens new tab](https://www.reuters.com/markets/companies/SLB.N), which [flagged](https://www.reuters.com/business/energy/slbs-quarterly-profit-beats-international-business-strength-2025-01-17/) flat revenue in 2025 revenue as customers limited activity and spending due to an oversupply of oil.
 
-These headwinds were partially offset by higher year-end sales of completion tools, increased artificial lift activity in North America and the Middle East, and better stimulation activity in Africa and the Middle East.
+Halliburton is anticipating flat revenue from international markets in 2025 due to lower activity in Mexico. Revenue from international markets had gained 2.4% in the fourth quarter.
 
-The Drilling and Evaluation segment's operating profit dropped to $401 million in Q4 2024 from $420 million a year earlier, missing analyst estimates of $417.5 million. The decline reflected reduced drilling services in the Middle East and Latin America and lower wireline activity globally.
+Revenue from North America, which accounted for 39% of the company's total revenue, is set to decrease to the low to mid single digits from 2024 levels, the company said, citing lower negotiated prices for a portion of its equipment.
 
----
+"We're not immune to pricing," said Jeff Miller, Chief Executive Officer of Halliburton.
 
-## Regional Breakdown
+North America revenue fell 9% to $2.2 billion in the reported quarter.
 
-**North America:** Revenue fell 8.7% year-over-year to $2.2 billion, coming in 7% below Goldman Sachs's own estimate and missing the Zacks projection by 1.1%. Softer pressure pumping and stimulation demand were the primary drivers.
+"We do not doubt that upstream capital spending in North America will eventually recover, but the near term is likely to be choppy," said Stewart Glickman, an energy equity analyst at CFRA Research, adding that Halliburton's challenge was its higher exposure to North America compared to SLB.
 
-**International:** Revenue rose $81 million year-over-year to $3.4 billion — 3% above the Goldman analyst's estimate — buoyed by stronger Middle East and Africa activity, though still slightly below the Zacks estimate.
+Completion and production services revenue eased 4.2% in the quarter, while revenue from drilling and evaluation rose just 0.4%.
 
----
+In the first quarter, completion and production revenue is expected to decline 3% to 5% sequentially, while that from its drilling and evaluation division is forecast to decline 8% to 10%.
 
-## Analyst Commentary
+Based on the midpoint of Halliburton's guidance for the two divisions, first-quarter revenue forecast is about 5% to 6% below consensus, brokerage Stifel's Stephen Gengaro said.
 
-Goldman Sachs analyst Neil Mehta noted that the softer revenue was mainly attributable to the decline in Completion and Production, partially offset by Drilling and Evaluation. He identified several open questions heading into 2025:
+Overall revenue of $5.61 billion was below analysts' average expectation of $5.63 billion, according to data compiled by LSEG.
 
-- Uncertainty about 2025 revenue growth by region, particularly Middle East activity levels
-- Questions on how investors should view long-term margin expansion in a flat activity environment
-- Ambiguity around Halliburton's future participation in the power space, including its partnership with VoltaGrid
-- How capital returns should be approached in 2025
+Operating margins in the quarter shrank 1 percentage point to 17%.
 
-Free cash flow for the quarter was $1.104 billion, surpassing the analyst's estimate of $930 million and the consensus of $1.045 billion, attributed to better working capital management and lower capital expenditures ($426 million vs. the $454 million estimate).
+On an adjusted basis, the Houston-based company earned 70 cents per share in the quarter, compared with the average analyst estimate of 69 cents, according to data compiled by LSEG.
 
-The company repurchased approximately $309 million in common stock during the quarter.
+Reporting by Seher Dareen in Bengaluru; Editing by Shounak Dasgupta, Chizu Nomiyama and Nick Zieminski
 
----
+Our Standards: [The Thomson Reuters Trust Principles., opens new tab](https://www.thomsonreuters.com/en/about-us/trust-principles.html)
 
-## Management Outlook
+- X
 
-Chairman, President and CEO Jeff Miller commented: "I am pleased with our performance in 2024. We generated over $2.6 billion dollars of free cash flow, and returned over $1.6 billion dollars of cash to our shareholders."
+- Facebook
 
-"While we expect 2025 to be sequentially softer in North America, we begin the second half of this decade in a great position, with a transformed balance sheet, leading returns, and strong free cash flow."
+- Linkedin
 
-For the full year 2024, Halliburton reported total revenue of $22.9 billion, flat compared to 2023.
+- Email
 
----
+- Link
 
-## Price Action
 
-HAL shares were trading lower by 1.51% to $29.09 at last check Wednesday.
+[Purchase Licensing Rights](https://www.reutersagency.com/en/licensereuterscontent/?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead)
 
----
+[Arathy Somasekhar](https://www.reuters.com/authors/arathy-somasekhar/)
 
-*Sources: Benzinga (January 22, 2025); Zacks Investment Research; Goldman Sachs equity research note (Neil Mehta)*
+Thomson Reuters
+
+Houston-based energy reporter focused on oil markets and energy companies. Arathy closely tracks U.S. crude supply and its impact on global markets, ever changing crude oil flows, and reports on U.S. shale producers and oilfield service companies.
+
+- [Email](mailto:arathy.s@thomsonreuters.com)
+- [X](https://x.com/Arathysom)
+- [Instagram](https://www.reuters.com/business/energy/halliburtons-fourth-quarter-profit-beats-estimates-2025-01-22/@Arathysom)
+- [Linkedin](https://www.linkedin.com/in/arathy-somasekhar-b7724371/)
+
+## Read Next
+
+- June 27, 2026[Energycategory](https://www.reuters.com/business/energy/)
+
+[Norway oil service lockout takes effect, disrupts offshore drilling](https://www.reuters.com/business/energy/norway-oil-service-lockout-takes-effect-disrupts-offshore-drilling-2026-06-27/)
+
+- June 26, 2026[Legalcategory](https://www.reuters.com/legal/)
+
+[Trump clean energy tax credit cutoff drives project rush as prices set to soar](https://www.reuters.com/legal/litigation/trump-clean-energy-tax-credit-cutoff-drives-project-rush-prices-set-soar-2026-06-26/)
+
+- June 26, 2026[Energycategory](https://www.reuters.com/business/energy/)
+
+[US diesel refining economics remain firm despite Iran war truce](https://www.reuters.com/business/energy/us-diesel-refining-economics-remain-firm-despite-iran-war-truce-2026-06-26/)
+
+- June 26, 2026[Energycategory](https://www.reuters.com/business/energy/)
+
+[Traffic through Strait of Hormuz slows after attack on ship](https://www.reuters.com/business/energy/traffic-through-strait-hormuz-slows-after-attack-ship-2026-06-26/)
+
+- 11 hours ago[Worldcategory](https://www.reuters.com/world/)
+
+[Tanzania has nationwide blackout after power grid failure, Bloomberg News reports](https://www.reuters.com/world/africa/tanzania-has-nationwide-blackout-after-power-grid-failure-bloomberg-news-reports-2026-06-27/)
+
+- June 26, 2026[Energycategory](https://www.reuters.com/business/energy/)
+
+[Venezuela oil output steady after quakes; power outages persist](https://www.reuters.com/business/energy/power-outage-slows-operations-key-port-plants-after-earthquakes-venezuela-2026-06-26/)
+
+
+## [Business](https://www.reuters.com/business/)
+
+- ### [Google limits Meta’s use of its Gemini AI models, FT reports](https://www.reuters.com/business/google-limits-metas-use-its-gemini-ai-models-ft-reports-2026-06-28/)
+
+[Businesscategory](https://www.reuters.com/business/) · June 28, 2026 · 1:23 AM EDT · 2 hours ago
+
+Google has put limits on Meta’s use of its Gemini AI ​models after the social media company sought more ‌computing capacity than the rival tech group could provide, the Financial Times reported on Sunday.
+
+- [Worldcategory](https://www.reuters.com/world/) [Tanzania has nationwide blackout after power grid failure, Bloomberg News reports](https://www.reuters.com/world/africa/tanzania-has-nationwide-blackout-after-power-grid-failure-bloomberg-news-reports-2026-06-27/)
+
+June 27, 2026
+
+- [Retail & Consumercategory](https://www.reuters.com/business/retail-consumer/) [Amazon Prime Day offers a glimpse into U.S. consumers as shoppers navigate with pinched wallets](https://www.reuters.com/business/retail-consumer/amazon-prime-day-offers-glimpse-into-us-consumer-shoppers-navigate-with-pinched-2026-06-27/)
+
+June 27, 2026
+
+- [Businesscategory](https://www.reuters.com/business/) [US close to allowing Anthropic to restore Fable 5 model, Axios reports](https://www.reuters.com/business/us-close-allowing-anthropic-restore-fable-5-model-axios-reports-2026-06-27/)
+
+June 27, 2026
+
+- [category](https://www.reuters.com/world/) [Bolivia ends 15-year dollar peg in attempt to restore economic stability](https://www.reuters.com/world/americas/bolivia-ends-15-year-dollar-peg-attempt-restore-economic-stability-2026-06-27/)
+
+June 27, 2026

@@ -50,7 +50,7 @@
     "id": "04",
     "file": "04_halliburton_revenue_miss.txt",
     "label": "Halliburton Q4 2024 slight revenue miss ($5.61B vs $5.64B)",
-    "source_url": "https://www.benzinga.com/25/01/43138748/halliburton-misses-q4-revenue-estimates-analyst-doubts-2025-growth-in-middle-east",
+    "source_url": "https://www.reuters.com/business/energy/halliburtons-fourth-quarter-profit-beats-estimates-2025-01-22/",
     "expected": {
       "entity_contains": "Halliburton",
       "event_type_one_of": ["earnings_miss", "revenue_miss", "earnings_decline"],
@@ -60,7 +60,7 @@
     },
     "test_roles": ["semantic_boundary_low", "structural", "consistency_earnings"],
     "pairs": [],
-    "notes": "Unambiguous low severity. $30M miss on a $5.6B quarter, stock down only 1.5%. If this returns severity >= 3, the model is miscalibrated. Cross-field check: if event_type is earnings_miss, severity must be <= 3."
+    "notes": "Unambiguous low severity. $30M miss on a $5.6B quarter, stock down only 1.5%. Reuters headline says 'profit beats estimates' (EPS matched) while revenue missed — a naive pipeline reading only the headline may score this as positive. Good stress test for sentiment-vs-magnitude. If severity >= 3, the model is miscalibrated. Cross-field check: if event_type is earnings_miss, severity must be <= 3."
   },
   {
     "id": "05",
