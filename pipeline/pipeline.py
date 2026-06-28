@@ -40,7 +40,7 @@ Return only valid JSON. No explanation, no markdown, no extra keys."""
 MAX_CHARS = 12_000
 
 
-def run_pipeline(article_text: str, model: str = "gpt-4o-mini") -> dict:
+def run_pipeline(article_text: str, model: str = "gpt-5.4-mini") -> dict:
     """Run the extraction pipeline on a single article.
 
     Args:
