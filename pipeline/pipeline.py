@@ -3,6 +3,7 @@
 Input:  raw article text (string)
 Output: {"entity": str, "event_type": str, "severity": int (1-5), "confidence": float (0-1)}
 """
+
 from __future__ import annotations
 
 import json
