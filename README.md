@@ -14,16 +14,19 @@ project/
 ├── pipeline/
 │   └── pipeline.py         ← article → {entity, event_type, severity, confidence}
 ├── tests/
-│   ├── conftest.py         ← session-scoped pipeline runner with file cache
+│   ├── conftest.py         ← session-scoped pipeline runner, file cache, and Markdown results reporter
 │   ├── test_structural.py  ← schema invariants (keys, types, value ranges)
 │   ├── test_semantic.py    ← boundary + cross-field consistency assertions
 │   ├── test_metamorphic.py ← relational assertions across fixture pairs
 │   └── test_regression.py  ← distribution shift detection vs. baseline snapshot
 ├── snapshots/
 │   └── baseline.json       ← committed pipeline outputs (generated once, then diffed)
-└── scripts/
-    ├── fetch_fixtures.py   ← scrape articles via Firecrawl
-    └── generate_baseline.py ← run pipeline on all fixtures and commit the output
+├── test-results/
+│   └── results.md          ← Markdown test report written after every pytest run
+├── scripts/
+│   ├── fetch_fixtures.py   ← scrape articles via Firecrawl
+│   └── generate_baseline.py ← run pipeline on all fixtures and commit the output
+└── main.py                 ← package entry point
 ```
 
 ---
@@ -34,9 +37,11 @@ project/
 # Install dependencies
 uv sync
 
-# Set your OpenAI key (or add to .env)
+# Set your OpenAI key (or add to .env — see .env.example)
 export OPENAI_API_KEY=sk-...
 ```
+
+The pipeline defaults to `gpt-5.4-mini`. To use a different model, pass `model=` to `run_pipeline()` directly.
 
 ---
 
@@ -66,6 +71,12 @@ The pipeline makes LLM calls, which are slow and cost money. Results are cached 
 - `rm .cache/pipeline_results.json` — manual delete
 
 > If you change an article or the pipeline prompt, always use `FLUSH_CACHE=1` to get fresh results.
+
+### Test Report
+
+After every pytest run, `conftest.py` writes a full Markdown report to `test-results/results.md` with pass/fail counts, per-test duration, and failure details.
+
+It also prints a `PIPELINE OUTPUTS` table at the end of the terminal session showing each fixture's actual `entity`, `event_type`, `severity`, and `confidence` alongside its expected bounds — useful for a quick sanity check after a fresh run.
 
 ---
 
@@ -102,24 +113,29 @@ Schema-only checks. Runs on all 10 fixtures. No knowledge of expected values.
 
 ### 2. Semantic (`test_semantic.py`)
 Checks *what* the output is against human-annotated expectations in `metadata.json`.
-- `entity` contains the expected substring (case-insensitive)
-- `event_type` is in the acceptable set for this fixture
-- `severity` falls within the `[severity_min, severity_max]` band
+
+**Deliberately NOT checked here:** `entity` and `event_type` correctness. Multi-actor articles have several defensible primary entities, and there is no canonical event-type taxonomy — so asserting either field against a hand-picked set would be asserting correctness against an ontology we invented. Structural tests still guarantee both are non-empty strings; the cross-field checks below verify `event_type` is internally coherent with `severity`.
+
+**What IS checked:**
+- `severity` falls within the `[severity_min, severity_max]` band declared in `metadata.json`
 - `confidence` respects declared floor/ceiling
-- Cross-field: `earnings_miss` events must have `severity <= 3`
-- Cross-field: `bankruptcy` events must have `severity >= 3`
-- Cross-field: resolution articles must not be classified as attacks
+- Cross-field: if the model labels an event as an earnings/revenue miss or decline, `severity <= 3`
+- Cross-field: if the model labels an event as bankruptcy/insolvency, `severity >= 3`
+- Cross-field: fixtures whose expected type is a resolution family must not be classified as an active attack
+
+Keyword matching (not exact strings) is used for cross-field checks so synonyms the test author never enumerated still trigger the assertion.
 
 ### 3. Metamorphic (`test_metamorphic.py`)
-Checks *how* outputs relate to each other, without asserting absolute values.
+Checks *how* outputs relate to each other, without asserting absolute values. Pairs are declared in `metadata.json` and discovered programmatically — no hardcoded fixture IDs in the test runner.
 
 | Pair | Type | Assertion |
 |---|---|---|
 | 06 (Houthis end attacks) ↔ 02 (Houthis kill crew) | Negation | `severity(06) < severity(02)` |
-| 09 (port strike resolved) ↔ 03 (port strike active) | Negation | `severity(09) < severity(03)` |
+| 09 (port strike resolved) ↔ 03 (port strike active) | Negation | `severity(09) <= severity(03)` |
 | 07 (Red Sea modest framing) ↔ 08 (Red Sea full escalation) | Monotonicity | `severity(07) <= severity(08)` |
+| 07 (Red Sea hedged WEF overview) ↔ 02 (Houthi fatal attack) | Confidence | `confidence(07) < confidence(02)` |
 
-These tests are model-agnostic — they don't care what the actual severity numbers are, only that the ordering is sensible.
+These tests are model-agnostic — they don't care what the actual numbers are, only that the ordering is sensible.
 
 ### 4. Regression (`test_regression.py`)
 Compares fresh output distribution against `snapshots/baseline.json`.
