@@ -1,0 +1,159 @@
+<!-- fixture_id: 08 | source: https://www.atlasinstitute.org/the-red-sea-shipping-crisis-2024-2025 -->
+
+Search for:
+
+March 27, 2025
+
+[Risk Analysis & Insights](https://atlasinstitute.org/category/titan/titan-risk-analysis/), [Titan](https://atlasinstitute.org/category/titan/), [News](https://atlasinstitute.org/category/news/), [Middle East & North Africa](https://atlasinstitute.org/category/news/news-middle-east-and-north-africa/)
+
+# The Red Sea Shipping Crisis (2024–2025): Houthi Attacks and Global Trade Disruption
+
+By Victoria Sainz
+
+* * *
+
+#### **Executive Summary**
+
+Since November 2023, **Houthi attacks** **(** **over 190 by October 2024** **)** significantly disrupted Red Sea/Aden Gulf shipping (House of Commons Library Specialists, 2025). **Freight/insurance costs surged**, with many rerouting via Cape of Good Hope (International Crisis Group, 2025). This impacts **Europe, Asia, Africa** (Suez revenue down) (Delivorias, 2024). **Naval coalitions** formed, and some **military strikes/sanctions** occurred (Baldor & Coop, 2025).
+
+#### **The Red Sea’s Strategic Importance**
+
+The Red Sea is a crucial sea link between Europe and Asia via the Suez Canal (12% world commerce) (New Zealand Embassy in Cairo, 2021). Container cargo, oil, LNG, and grains are major affected commodities (Delivorias, 2024). Hostilities by the Houthi erupted in the 1990s and persisted as they took control of Sana’a in 2014 (House of Commons Library Specialists, 2025). Following the Gaza war of October 2023, threats by Houthi were again aimed at maritime shipping against vessels involved with Israel, the US, and the UK. The U.S. and its allies responded with military action, further escalating tensions in the Red Sea (International Crisis Group, 2025).
+
+#### **How This Crisis Is Hitting Global Trade**
+
+The Red Sea crisis, caused by Houthi attacks, has generally affected shipping across the globe. Most of the largest shipping companies have been forced to reroute ships via the Cape of Good Hope in Africa, leading to much longer journey times of 10-14 days from Asia to Europe (Delivorias, 2024). This has caused a dramatic reduction of traffic via the Bab al-Mandab Strait and the Suez Canal. According to Figure 2, average daily transit trading volume went down from approximately 4.0 million metric tons towards the end of 2023 to a low of approximately 1.7 million metric tons at the beginning of 2024: a decrease of nearly 57.5% (IMF Portwatch , 2015).
+
+Suez Canal: Transit Trade Volume Oct 2023-May 2024
+
+01 May 2401 Apr 2401 Mar 2401 Feb 2401 Jan 2401 Dec 2301 Nov 2301 Oct 2306,000,0004,000,0002,000,000Metric TonsDaily TransitTrade VolumeDaily TransitTrade Volume7-day MovingAverage7-day MovingAveragePrior Year: 7-dayMoving AveragePrior Year: 7-dayMoving Average
+
+Made with Flourish • [Create a chart](https://flourish.studio/visualisations/line-bar-pie-charts/?utm_source=showcase&utm_campaign=visualisation/22296666)
+
+**Figure 2. Suez Canal: Transit Trade Volume Oct 2023-May 2024**
+
+These have brought about significant cost increases, including a rise in average spot freight container rates and higher insurance costs for vessels transiting through the area. The extended delivery times and increased transport costs are having economic ripple effects, disrupting world supply chains and even likely feeding through to higher inflation. Supply chains built around industries reliant on just-in-time manufacturing have already been brought to a halt, and trade and commodity export volumes for East Africa nations and Middle Eastern nations can be impacted, exacerbating those regions’ underlying economic vulnerabilities (International Crisis Group, 2025; Delivorias, 2024).
+
+#### **Government & Industry Responses**
+
+In response to the escalating Red Sea crisis, governments and the shipping industry have implemented countermeasures. Naval escorts and task forces such as the US-led Operation Prosperity Guardian (House of Commons Library Specialists, 2025) and the EU’s Operation Aspides, which will run until February 2026 (Chambers, 2025) have been established to protect commercial vessels and secure freedom of navigation (International Crisis Group, 2025). Beyond the defensive coalition, the US has also conducted direct military strikes against Houthi targets in Yemen, often in conjunction with the UK (Baldor & Coop, 2025). These strikes, sometimes referred to as Operation Poseidon Archer, have targeted Houthi radar sites, missile launchers, drone facilities, and weapons storage depots in areas like Hodeida, Sana’a, and Saada (International Crisis Group, 2025). Despite these military operations, the Houthi attacks have persisted, highlighting the challenge of deterring the group and ensuring the safety of Red Sea shipping (Raydan, 2024). Most shipping companies have therefore turned to rerouting measures, going the longer route around the Cape of Good Hope in Africa to avoid the dangerous Gulf of Aden and Red Sea (Raydan and Nadimi, 2025), but this detour is costly in fuel and delays shipments (New Zealand Embassy in Cairo, 2021). The crisis has highlighted the vulnerability of major maritime chokepoints and has likely influenced maritime security policy by provoking discussion on increased international cooperation, more robust enforcement of arms embargoes, and the potential need for additional security measures in the area.
+
+#### **Strategic Shifts and Investment Opportunities Hidden in the Crisis**
+
+The situation in the Red Sea presents however a range of possibilities. The persistent threats have set off a realignment at the strategic level towards investing in advanced security technologies for naval protection, including detection, intelligence sharing, and countermeasures (Raydan and Nadimi, 2025). This can create a boom in the security technology market.
+
+Moreover, the disruption highlighted the need for other routes of trade, and investment and development have been put into routes bypassing the Red Sea, such as the route bypassing Africa’s Cape of Good Hope (Delivorias, 2024). Raising costs and transit times (New Zealand Embassy in Cairo, 2021), this strategic realignment presents opportunities for countries along these alternative routes to enhance their logistics and port infrastructures.
+
+Finally, the heightened threats in the Red Sea have prompted higher shipping insurance premiums (International Crisis Group, 2025). This kind of instability in the insurance sector offers scope for insurers to restructure their products and new risk assessment and mitigation policies for maritime shipping in unstable regions.
+
+#### **Risks for Global Investors & Companies**
+
+Continued volatility and unpredictability of Houthi attacks pose a major risk, with the group expanding targets despite warnings. The risk of conflict spillover into Gulf shipping lanes is high due to regional tensions and the substantial multinational military presence. Supply chain disruption affects automotive, electronics, and agriculture with ships taking a detour around Africa, incurring cost and transit time (International Crisis Group, 2025). This has already caused production halts (Delivorias, 2024). The long-term impact on Suez Canal revenues is of specific concern to Egypt, with a significant reduction already experienced, compounding economic weaknesses (House of Commons Library Specialists, 2025). Shipping companies are still cautious despite lulls in attacks (Chambers, 2025).
+
+#### **What Comes Next**
+
+Long-term international maritime security requires collective effort beyond military interventions. Reduction of trade routes diversification is called for to lessen Red Sea disruption, as testified by the boost in traffic via the Cape of Good Hope. Companies now must integrate geopolitical risk analysis into their logistics planning to pass through such risky chokepoints and design supply chains robust.
+
+#### **Reference list**
+
+1. BALDOR, L.C. and COPP, T. (2024). _US warplanes, ships and troops ready in the Middle East if the conflict expands_. \[online\] AP News. Available at: https://apnews.com/article/israel-hezbollah-us-military-ships-aircraft-3ef96cbdf87238de559e84e28573f611.
+2. Chambers, S. (2025). _More tankers and dry bulk carriers turn away from the Red Sea_. \[online\] Splash247. Available at: https://splash247.com/more-tankers-and-dry-bulk-carriers-turn-away-from-the-red-sea/
+3. Delivorias, A. (2024). _Recent Threats in the Red Sea Economic Impact on the Region and on the EU_. \[online\] European Parliament . Available at: https://www.europarl.europa.eu/RegData/etudes/BRIE/2024/760390/EPRS\_BRI(2024)760390\_EN.pdf.
+4. House of Commons Library Spcialists (2025). _UK and International Response to Houthis in the Red Sea 2024/25- Research Briefing_. \[online\] House of Commons Library. Available at: https://researchbriefings.files.parliament.uk/documents/CBP-9930/CBP-9930.pdf.
+5. IMF Portwatch (2015). _PORT MONITOR: Suez Canal_. \[online\] Imf.org. Available at: https://portwatch.imf.org/pages/chokepoint1
+6. International Crisis Group (2025). _Calming the Red Sea’s Turbulent Waters – Middle East Report N°248_. \[online\] Brussels : International Crisis Group . Available at: https://www.crisisgroup.org/middle-east-north-africa/gulf-and-arabian-peninsula/yemen/248-calming-red-seas-turbulent-waters.
+7. New Zealand Embassy in Cairo (2021). _The Importance of the Suez Canal to Global Trade Market Report 18_. \[online\] New Zealand Ministry of Foreign Affairs and Trade. Available at: https://www.mfat.govt.nz/assets/Trade/MFAT-Market-reports/The-Importance-of-the-Suez-Canal-to-Global-Trade-18-April-2021.pdf.
+8. Raydan, N. (2024). _Houthi Ship Attacks Pose a Longer-Term Challenge to Regional Security and Trade Plans_. \[online\] The Washington Institute. Available at: https://www.washingtoninstitute.org/policy-analysis/houthi-ship-attacks-pose-longer-term-challenge-regional-security-and-trade-plans.
+9. Raydan, N. and Nadimi, F. (2025). _Despite the Houthi Pledge to Limit Attacks, the Red Sea Remains Highly Volatile_. \[online\] The Washington Institute. Available at: https://www.washingtoninstitute.org/policy-analysis/despite-houthi-pledge-limit-attacks-red-sea-remains-highly-volatile.
+
+### In this Section
+
+- [Risk Analysis & Insights](https://atlasinstitute.org/category/titan/titan-risk-analysis/)
+
+Search for:
+
+##### About the author
+
+![](https://atlasinstitute.org/wp-content/uploads/2025/04/fd0798f4-28de-426c-abf3-cd5d5080c6f2.jpeg)
+
+[Victoria Sainz](https://atlasinstitute.org/author/victoria-sainz/)
+
+> > Master’s in Public Policy at UCL, with a Bachelor’s degree in politics and international relations from Durham University. Background in diplomacy with experience working for the Mexican Embassy in the UK, with particular expertise in international organisations. Interested in geopolitics and international conflicts, focusing on global power dynamics.
+
+[User email](mailto:sainzvictoria.m@gmail.com "User email")
+
+## SIMILAR **POSTS**
+
+[![](https://atlasinstitute.org/wp-content/uploads/2026/06/Featured-Image-1-1024x576.png)](https://atlasinstitute.org/from-strategic-depth-to-strategic-blowback-pakistan-the-taliban-and-the-unravelling-of-a-three-decade-afghan-strategy/)
+
+[Risk Analysis & Insights](https://atlasinstitute.org/category/titan/titan-risk-analysis/), [Titan](https://atlasinstitute.org/category/titan/), [Asia-Pacific](https://atlasinstitute.org/category/news/news-asia-pacific/), [International Relations](https://atlasinstitute.org/category/experts/experts-international-relations/), [Regional Studies](https://atlasinstitute.org/category/experts/experts-regional-studies/), [Defence & Security](https://atlasinstitute.org/category/academy/academy-defence-and-security/)
+
+### [From Strategic Depth to Strategic Blowback: Pakistan, the Taliban, and the Unravelling of a Three-Decade Afghan Strategy](https://atlasinstitute.org/from-strategic-depth-to-strategic-blowback-pakistan-the-taliban-and-the-unravelling-of-a-three-decade-afghan-strategy/)
+
+Vikas Bhardwaj
+
+* * *
+
+Pakistan believed a Taliban-led Afghanistan would secure its western frontier and cement its regional influence. Five years after the Taliban's return, the evidence points in the opposite direction: rising militancy,…
+
+[Read more](https://atlasinstitute.org/from-strategic-depth-to-strategic-blowback-pakistan-the-taliban-and-the-unravelling-of-a-three-decade-afghan-strategy/)
+
+[![](https://atlasinstitute.org/wp-content/uploads/2026/06/0abbda7f-f769-4794-8aab-c805515eab2a-1024x576.jpg)](https://atlasinstitute.org/brazil-without-a-successor-the-failure-of-the-left-and-its-implications-for-regional-stability/)
+
+[Risk Analysis & Insights](https://atlasinstitute.org/category/titan/titan-risk-analysis/), [Titan](https://atlasinstitute.org/category/titan/), [News](https://atlasinstitute.org/category/news/), [South America](https://atlasinstitute.org/category/technology/briefs-south-america/)
+
+### [Brazil Without a Successor: The Failure of the Left and Implications For Regional Stability](https://atlasinstitute.org/brazil-without-a-successor-the-failure-of-the-left-and-its-implications-for-regional-stability/)
+
+Med Brazão
+
+* * *
+
+How Lula's dominance has exposed the Brazilian left's succession dilemma and reshaped the future of regional politics. Brazilian foreign policy maintained a striking degree of continuity in the decades following…
+
+[Read more](https://atlasinstitute.org/brazil-without-a-successor-the-failure-of-the-left-and-its-implications-for-regional-stability/)
+
+[![](https://atlasinstitute.org/wp-content/uploads/2026/06/23-009-image-from-rawpixel-id-6925268-original-1024x576.jpg)](https://atlasinstitute.org/the-best-defense-is-a-good-offense-ukraines-long-range-strike-campaign-on-russian-territory/)
+
+[Risk Analysis & Insights](https://atlasinstitute.org/category/titan/titan-risk-analysis/), [Titan](https://atlasinstitute.org/category/titan/), [Experts](https://atlasinstitute.org/category/experts/), [Defence & Security](https://atlasinstitute.org/category/experts/experts-defence-and-security/)
+
+### [The Best Defense is a Good Offense: Ukraine’s Long-Range Strike Campaign on Russian Territory](https://atlasinstitute.org/the-best-defense-is-a-good-offense-ukraines-long-range-strike-campaign-on-russian-territory/)
+
+Kamen Kirov
+
+* * *
+
+The cost-effectiveness of drone technology combined with the resourcefulness of a country fighting for its independence has resulted in a surprising and highly effective Ukrainian campaign of strategic strikes on…
+
+[Read more](https://atlasinstitute.org/the-best-defense-is-a-good-offense-ukraines-long-range-strike-campaign-on-russian-territory/)
+
+AIIA Insights
+
+Our regular newsletter with international political news. Stay up-to-date and connected to our think tank.
+
+[Subscribe](https://atlasinstitute.beehiiv.com/subscribe)
+
+This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish.Accept [Read More](https://atlasinstitute.org/privacy-and-policy/)
+
+Privacy & Cookies Policy
+
+Close
+
+#### Privacy Overview
+
+This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the ...
+
+Necessary
+
+Necessary
+
+Always Enabled
+
+Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.
+
+Non-necessary
+
+Non-necessary
+
+Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.
+
+SAVE & ACCEPT

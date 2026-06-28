@@ -1,0 +1,69 @@
+<!-- fixture_id: 04 | source: https://www.benzinga.com/25/01/43138748/halliburton-misses-q4-revenue-estimates-analyst-doubts-2025-growth-in-middle-east -->
+
+# Halliburton's Soft Revenue Lags Estimates, Goldman Sachs Analyst Seeks Clarity On 2025 Activities
+
+**Benzinga | January 22, 2025**
+
+Halliburton Company (NYSE: HAL) shares are trading lower on Wednesday after the oilfield services giant reported a slight fourth-quarter revenue miss against consensus estimates.
+
+Goldman Sachs analyst Neil Mehta reiterated the Buy rating on the stock, with a price forecast of $36.
+
+---
+
+## Q4 2024 Results
+
+Halliburton reported a fourth-quarter revenue decline of 2.3% year-over-year to **$5.610 billion**, missing the consensus estimate of **$5.63 billion** — a shortfall of approximately $20–30 million on a $5.6 billion base.
+
+Adjusted net income per share came in at **$0.70**, matching the Zacks Consensus Estimate but below the year-ago quarter's profit of $0.86 per diluted share.
+
+Completion and Production revenue fell 4.2% year-over-year to $3.2 billion, with operating income of $629 million, lower than last year's $716 million. The decline was driven primarily by:
+
+- Reduced stimulation activity in North America
+- Lower pressure pumping services in Latin America
+
+These headwinds were partially offset by higher year-end sales of completion tools, increased artificial lift activity in North America and the Middle East, and better stimulation activity in Africa and the Middle East.
+
+The Drilling and Evaluation segment's operating profit dropped to $401 million in Q4 2024 from $420 million a year earlier, missing analyst estimates of $417.5 million. The decline reflected reduced drilling services in the Middle East and Latin America and lower wireline activity globally.
+
+---
+
+## Regional Breakdown
+
+**North America:** Revenue fell 8.7% year-over-year to $2.2 billion, coming in 7% below Goldman Sachs's own estimate and missing the Zacks projection by 1.1%. Softer pressure pumping and stimulation demand were the primary drivers.
+
+**International:** Revenue rose $81 million year-over-year to $3.4 billion — 3% above the Goldman analyst's estimate — buoyed by stronger Middle East and Africa activity, though still slightly below the Zacks estimate.
+
+---
+
+## Analyst Commentary
+
+Goldman Sachs analyst Neil Mehta noted that the softer revenue was mainly attributable to the decline in Completion and Production, partially offset by Drilling and Evaluation. He identified several open questions heading into 2025:
+
+- Uncertainty about 2025 revenue growth by region, particularly Middle East activity levels
+- Questions on how investors should view long-term margin expansion in a flat activity environment
+- Ambiguity around Halliburton's future participation in the power space, including its partnership with VoltaGrid
+- How capital returns should be approached in 2025
+
+Free cash flow for the quarter was $1.104 billion, surpassing the analyst's estimate of $930 million and the consensus of $1.045 billion, attributed to better working capital management and lower capital expenditures ($426 million vs. the $454 million estimate).
+
+The company repurchased approximately $309 million in common stock during the quarter.
+
+---
+
+## Management Outlook
+
+Chairman, President and CEO Jeff Miller commented: "I am pleased with our performance in 2024. We generated over $2.6 billion dollars of free cash flow, and returned over $1.6 billion dollars of cash to our shareholders."
+
+"While we expect 2025 to be sequentially softer in North America, we begin the second half of this decade in a great position, with a transformed balance sheet, leading returns, and strong free cash flow."
+
+For the full year 2024, Halliburton reported total revenue of $22.9 billion, flat compared to 2023.
+
+---
+
+## Price Action
+
+HAL shares were trading lower by 1.51% to $29.09 at last check Wednesday.
+
+---
+
+*Sources: Benzinga (January 22, 2025); Zacks Investment Research; Goldman Sachs equity research note (Neil Mehta)*

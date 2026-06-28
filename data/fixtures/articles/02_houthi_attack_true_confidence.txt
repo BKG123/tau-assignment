@@ -1,0 +1,290 @@
+<!-- fixture_id: 02 | source: https://www.cnn.com/2024/03/07/business/houthi-red-sea-attack-shipping-costs -->
+
+Markets
+
+DOW51,876.11-44.510.09%
+
+S&P 5007,354.02-3.470.05%
+
+NASDAQ25,297.62-60.990.24%
+
+Hot Stocks
+
+[AAPL](https://www.cnn.com/markets/stocks/AAPL)
+
+Apple Inc.
+
+283.78
+
+\+ 8.63
+
+3.14%
+
+[AMZN](https://www.cnn.com/markets/stocks/AMZN)
+
+Amazon.com, Inc.
+
+232.69
+
+\+ 5.68
+
+2.50%
+
+[MSFT](https://www.cnn.com/markets/stocks/MSFT)
+
+Microsoft Corporation
+
+372.97
+
+\+ 20.14
+
+5.71%
+
+Fear & Greed Index
+
+[\-\-\--- is driving the US market](https://www.cnn.com/markets/fear-and-greed?utm_source=business_ribbon)
+
+Latest Market News
+
+- [How Trump Accounts compare to other savings plans for your child](https://www.cnn.com/2026/06/27/business/trump-accounts-comparison-savings-plans?utm_source=business_ribbon)
+- [US government allows Anthropic limited release of AI model that sparked cybersecurity concerns](https://www.cnn.com/2026/06/26/tech/anthropic-mythos-release?utm_source=business_ribbon)
+- [Trump threatened 100% tariffs on Europe. Here’s why nobody flinched](https://www.cnn.com/2026/06/26/business/trump-tariff-threat?utm_source=business_ribbon)
+
+[\-\-\--- is driving the US market](https://www.cnn.com/markets/fear-and-greed?utm_source=business_ribbon)
+
+Something isn't loading properly. Please check back later.
+
+[Business](https://www.cnn.com/business) 4 min read
+
+# Fatal Houthi rebel attack may be a ‘red line’ in Red Sea shipping crisis
+
+Analysis by [![Hanna Ziady](https://media.cnn.com/api/v1/images/stellar/prod/230612141828-hanna-ziady.jpg?c=16x9&q=h_270,w_480,c_fill/c_thumb,g_face,w_50,h_50)](https://www.cnn.com/profiles/hanna-ziady)[Hanna Ziady](https://www.cnn.com/profiles/hanna-ziady)
+
+Updated Mar 8, 2024
+
+Updated Mar 8, 2024, 4:22 AM ET
+
+PUBLISHED Mar 7, 2024, 1:04 PM ET
+
+FacebookTweet[Email](mailto:?subject=CNN%20content%20share&body=Check%20out%20this%20article%3A%0Ahttps%3A%2F%2Fwww.cnn.com%2F2024%2F03%2F07%2Fbusiness%2Fhouthi-red-sea-attack-shipping-costs "Share with email")LinkThreads
+
+Link Copied!
+
+
+![The Liberian-owned True Confidence ablaze following a Houthi missile attack on March 6, 2024.](https://media.cnn.com/api/v1/images/stellar/prod/2024-03-07t040138z-339243948-rc2rg6a4masc-rtrmadp-3-israel-palestinians-shipping.jpeg?c=original&q=w_860,c_fill)
+
+The Liberian-owned True Confidence ablaze following a Houthi missile attack on March 6, 2024.
+
+DVIDS/Reuters
+
+London —
+
+The first [fatal attack](https://www.cnn.com/2024/03/06/politics/crew-members-killed-houthi-attack/index.html) on a commercial vessel in the Red Sea since Iran-backed Houthi rebels began targeting ships late last year has laid bare the enormous challenge of restoring safe passage along one of the world’s [most important trade routes](https://www.cnn.com/2024/02/08/business/red-sea-crisis-global-trade-explained/index.html).
+
+
+At least three crew members were killed and four others injured in the assault Wednesday on the M/V True Confidence, a Liberian-owned bulk carrier, one of the ships that transport dry cargo such as grain and iron ore.
+
+
+The deadly strike marks a significant escalation of the Houthi attacks on ships in the Red Sea and and comes despite a US-led naval coalition to protect the [crucial waterway](https://www.cnn.com/2024/01/19/economy/davos-inflation-red-sea-middle-east/index.html). It also follows an assault late last month that sanka [cargo ship](https://www.cnn.com/2024/02/23/politics/sinking-ship-houthi-missile-oil-slick/index.html), which is now discharging fertilizer into the ocean.
+
+
+Ad Feedback
+
+Fewer ships appear to be transiting through the Red Sea and adjoining Suez Canal after the latest attack, according to maritime risks analytics company Windward. Transits have already dropped substantially since December when carriers started [avoiding the area](https://www.cnn.com/2023/12/18/investing/bp-pauses-transit-through-red-sea/index.html) and rerouting vessels around the southern tip of Africa.
+
+
+The longer the disruption persists and the more ships are diverted, the greater the delays in delivering goods, commodities and fuel, which risks driving prices higher.
+
+
+According to Windward, the number of bulk carriers anchoring outside ports to the north and south of the Suez Canal surged 225% Wednesday compared with the previous day. “Our data shows that 61% of these (anchored) after 13:30 UTC (18:30 ET), which was the time of the attack,” Windward CEO Ami Daniel told CNN.
+
+
+He expects the attack will lead to even larger numbers of bulk carriers avoiding the Canal, through which 10-15% of world trade and 30% of container trade passes. “The propensity that something will happen is higher than people thought and the severity of the impact, once something happens, is (worse) than people thought,” he added.
+
+
+Windward data shows that last month the number of bulk carriers in the Red Sea was already at its lowest level in two years.
+
+
+20240122-suez-canal-chokepoint
+
+# Shipping through the Suez Canal dropped after Houthi attacks
+
+## Container shipping companies have been avoiding the Red Sea and the Suez Canal as Houthi militants in Yemen escalate attacks on commercial vessels.     **Number of ships in the Suez Canal, seven-day rolling average**
+
+## Oil tanker transits to fall
+
+The Houthis have launched more than 45 missile and drone attacks against commercial as well as US and allied naval vessels operating in the Red Sea, according to US and otherWestern officials.
+
+
+Most of these have been intercepted or havelanded harmlessly in the water, making Wednesday’s attack even more of a shock, whichcould cause shipping companies still transiting the waterway to think again.
+
+
+“A red line may now have been crossed with the casualties,” said Peter Sand, chief analyst at Xeneta, a shipping analytics company based in Norway.
+
+
+Just 30% of the usual shipping capacity — including container ships, bulk carriers, car carriers, and tankers carrying oil and liquefiednatural gas — is still passing through the Red Sea and Suez Canal, according to Sand.
+
+
+“I am expecting that the deadly attack will see that level sink to a new low,” he told CNN. “It’s mainly oil tankers that are still transiting and (they are)those that we should now expect to retreat too in greater numbers.”
+
+
+At the very least, the assault makes clear that it could be many months before the crisis is resolved.
+
+
+That means major container shipping companies— including Maersk, MSC and Hapag Lloyd — will continue sending their vessels on the much longer, costlier route around Africa, keeping costs to transport goods elevated.
+
+
+The threat the regional crisis poses to the economy was highlighted by European Central Bank President Christine Lagarde Thursday.
+
+
+“Upside risks to inflation include heightened geopolitical tensions, especially in the Middle East, which could push energy prices and freight costs higher in the near term and disrupt global trade,” she said.
+
+
+## Seafarers on ‘the front line’
+
+Container shipping costs along some of the world’s busiest trade routes remain more than double what they were in December, according to data from London-based shipping consultancy Drewry.
+
+
+French container shipping firm CMA CGM [said](https://www.cma-cgm.com/news/4630/cma-cgm-operations-in-the-red-sea-update) last week that it would resume “some transit” through the Red Sea “on a case-by-case basis.” The company did not respond to a CNN query on whether it plans to change its approach following the deadly attack.
+
+
+20240109-suez-canal-routes
+
+# Red Sea attacks disrupt global shipping
+
+## Container shipping companies have been avoiding the Red Sea and rerouting vessels around Africa as Houthi militants in Yemen escalate attacks on commercial vessels.
+
+![](https://ix.cnn.io/dailygraphics/graphics/20240109-suez-canal-routes/static/media/ai2html-graphic-mobile320.40a04792.png)
+
+Rotterdam,
+
+Netherlands
+
+Shanghai,
+
+China
+
+Suez Canal
+
+11,000
+
+nautical miles
+
+Red Sea
+
+Yemen
+
+Bab el-Mandeb Strait
+
+14,000
+
+nautical miles
+
+8–10 days longer
+
+Cape of Good Hope
+
+![](https://ix.cnn.io/dailygraphics/graphics/20240109-suez-canal-routes/static/media/ai2html-graphic-mobile375.506c45ab.png)
+
+Rotterdam,
+
+Netherlands
+
+Shanghai,
+
+China
+
+Suez Canal
+
+11,000
+
+nautical miles
+
+Red Sea
+
+Yemen
+
+Bab el-Mandeb Strait
+
+14,000
+
+nautical miles
+
+8–10 days longer
+
+Cape of Good Hope
+
+![](https://ix.cnn.io/dailygraphics/graphics/20240109-suez-canal-routes/static/media/ai2html-graphic-desktop.cc659d3a.png)
+
+Rotterdam,
+
+Netherlands
+
+Shanghai,
+
+China
+
+Suez Canal
+
+11,000
+
+nautical miles
+
+Red Sea
+
+Yemen
+
+Bab el-Mandeb Strait
+
+14,000
+
+nautical miles
+
+8–10 days longer
+
+Cape of Good Hope
+
+On Wednesday, the International Transport Workers’ Federation renewed its call on the shipping industry to divert ships around the Cape of Good Hope until safe transit through the Red Sea can be guaranteed.
+
+
+“We have consistently warned the international community and the maritime industry about the escalating risks faced by seafarers in the Gulf of Aden and Red Sea,” the organization’s secretary-general, Stephen Cotton, said in a statement.
+
+
+It could become more difficult to hire seafarers following the attack, Cotton told CNN, even as basic pay for many of those working in the Red Sea and Gulf of Aden to its southeasthas already doubled following recent bargaining agreements.
+
+
+David Ashmore, an employment lawyer at global law firm Reed Smith, echoed this view. “In a world grappling with a shortage of maritime workforce, these safety concerns add another layer of complexity to an already challenging task,” he said.
+
+
+The incident “demonstrates what we’ve been saying since the start of the crisis, which is that the biggest impact is on seafarers,” added John Stawpert, senior manager for the environment and trade at the International Chamber of Shipping.
+
+
+“They’re in the front line… We always felt it would only be a matter of time before the Houthis’ attacks reach this conclusion.”
+
+
+_Maisie Linford contributed to this article._
+
+FacebookTweet[Email](mailto:?subject=CNN%20content%20share&body=Check%20out%20this%20article%3A%0Ahttps%3A%2F%2Fwww.cnn.com%2F2024%2F03%2F07%2Fbusiness%2Fhouthi-red-sea-attack-shipping-costs "Share with email")LinkThreads
+
+Link Copied!
+
+
+Ad Feedback
+
+Paid Content
+
+Paid Content
+
+Scan the QR code to download the CNN app on Google Play.
+
+Scan the QR code to download the CNN app from the Apple Store.
+
+![CNN Logo](https://www.cnn.com/media/sites/cnn/cnn.svg)
+
+## Legal Terms and Privacy
+
+By clicking Agree, you agree to the Terms of Use and to collection and use of your information by cookies and similar technologies, as set forth in our Privacy Policy. Accepting does not impact privacy choices you may have under state laws. Learn more in our US State Supplement.
+
+By clicking "Agree", you agree to the [Terms of Use](https://www.cnn.com/terms) and to the collection and use of your information by cookies and similar technologies, as set forth in our [Privacy Policy](https://www.cnn.com/privacy). Accepting does not impact privacy choices you may have under state laws. Learn more in our [US State Supplement](https://www.cnn.com/usstatesupplement).
+
+[Agree](https://www.cnn.com/2024/03/07/business/houthi-red-sea-attack-shipping-costs#)

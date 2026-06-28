@@ -1,0 +1,158 @@
+[
+  {
+    "id": "01",
+    "file": "01_stg_logistics_bankruptcy.txt",
+    "label": "STG Logistics Chapter 11 bankruptcy filing",
+    "source_url": "https://whatnow.com/news/trending/major-us-freight-logistics-company-files-chapter-11-bankruptcy/",
+    "expected": {
+      "entity_contains": "STG Logistics",
+      "event_type_one_of": ["bankruptcy", "chapter_11", "insolvency", "financial_distress"],
+      "severity_min": 4,
+      "severity_max": 5,
+      "confidence_min": 0.7
+    },
+    "test_roles": ["semantic_boundary_high", "structural"],
+    "pairs": [],
+    "notes": "Unambiguous high severity. CEO explicitly called it one of the worst freight recessions in history. Pipeline may return 'STG Logistics, Inc.' or 'STG Logistics' — use substring match."
+  },
+  {
+    "id": "02",
+    "file": "02_houthi_attack_true_confidence.txt",
+    "label": "Houthi fatal attack on MV True Confidence, crew killed",
+    "source_url": "https://www.cnn.com/2024/03/07/business/houthi-red-sea-attack-shipping-costs",
+    "expected": {
+      "entity_contains": "Houthi",
+      "event_type_one_of": ["geopolitical_attack", "maritime_attack", "shipping_attack", "geopolitical_disruption"],
+      "severity_min": 4,
+      "severity_max": 5,
+      "confidence_min": 0.75
+    },
+    "test_roles": ["semantic_boundary_high", "structural"],
+    "pairs": [],
+    "notes": "Fatalities, direct attack on commercial vessel, 57% drop in Suez traffic. High confidence expected — unambiguous event with named vessel, crew deaths, and specific date. Pipeline might return 'Houthi rebels' or 'Houthis'; use substring match."
+  },
+  {
+    "id": "03",
+    "file": "03_us_port_strike.txt",
+    "label": "US East Coast port strike, 36 ports shut down",
+    "source_url": "https://www.worldcargonews.com/news/2024/10/will-port-strike-severely-disrupt-us-economy/",
+    "expected": {
+      "entity_contains": "ILA",
+      "event_type_one_of": ["labor_disruption", "port_strike", "labor_action", "supply_chain_disruption"],
+      "severity_min": 4,
+      "severity_max": 5
+    },
+    "test_roles": ["semantic_boundary_high", "structural", "entity_extraction_multi"],
+    "pairs": [],
+    "notes": "Multi-entity article (ILA, USMX, 36 ports, Biden). entity_contains intentionally loose — 'ILA' or 'Longshoremen' are both acceptable. This is the known-ambiguous fixture; entity extraction is explicitly not reliable here and should be called out in the design note."
+  },
+  {
+    "id": "04",
+    "file": "04_halliburton_revenue_miss.txt",
+    "label": "Halliburton Q4 2024 slight revenue miss ($5.61B vs $5.64B)",
+    "source_url": "https://www.benzinga.com/25/01/43138748/halliburton-misses-q4-revenue-estimates-analyst-doubts-2025-growth-in-middle-east",
+    "expected": {
+      "entity_contains": "Halliburton",
+      "event_type_one_of": ["earnings_miss", "revenue_miss", "earnings_decline"],
+      "severity_min": 1,
+      "severity_max": 2,
+      "confidence_min": 0.65
+    },
+    "test_roles": ["semantic_boundary_low", "structural", "consistency_earnings"],
+    "pairs": [],
+    "notes": "Unambiguous low severity. $30M miss on a $5.6B quarter, stock down only 1.5%. If this returns severity >= 3, the model is miscalibrated. Cross-field check: if event_type is earnings_miss, severity must be <= 3."
+  },
+  {
+    "id": "05",
+    "file": "05_jb_hunt_slight_decline.txt",
+    "label": "J.B. Hunt slight revenue decline Q4 2024, management 'not satisfied'",
+    "source_url": "https://www.ttnews.com/articles/jb-hunt-earnings-q4-2024",
+    "expected": {
+      "entity_contains": "J.B. Hunt",
+      "event_type_one_of": ["earnings_miss", "revenue_decline", "revenue_miss", "earnings_decline"],
+      "severity_min": 1,
+      "severity_max": 2,
+      "confidence_min": 0.6
+    },
+    "test_roles": ["semantic_boundary_low", "consistency_earnings"],
+    "pairs": [],
+    "notes": "Low severity with ambiguous language. 'Not satisfied' and 'difficult environment' are emotionally charged but financially minor. Pipeline may over-index on negative sentiment rather than magnitude. Slightly lower confidence_min than 04 because the language is more hedged. Pipeline might return 'JB Hunt' — substring match on 'Hunt' is safer."
+  },
+  {
+    "id": "06",
+    "file": "06_houthis_end_attacks.txt",
+    "label": "Houthis announce end of Red Sea shipping attacks",
+    "source_url": "https://maritime-executive.com/article/houthis-announce-end-of-red-sea-shipping-attacks",
+    "expected": {
+      "entity_contains": "Houthi",
+      "event_type_one_of": ["geopolitical_resolution", "ceasefire", "conflict_resolution", "shipping_resumption"],
+      "severity_min": 1,
+      "severity_max": 2
+    },
+    "test_roles": ["metamorphic_negation"],
+    "pairs": [{"type": "negation", "pair_id": "02", "assert": "severity_lt"}],
+    "notes": "Negation pair with 02. Same entity, opposite valence — attacks ended vs attacks with fatalities. Severity must be strictly less than 02. event_type should shift to a resolution category, not stay as geopolitical_attack."
+  },
+  {
+    "id": "07",
+    "file": "07_red_sea_modest_impact.txt",
+    "label": "Red Sea crisis general overview, modest impact so far (WEF)",
+    "source_url": "https://www.weforum.org/stories/2024/02/red-sea-attacks-trade-experts-houthi-shipping-yemen/",
+    "expected": {
+      "entity_contains": "Red Sea",
+      "event_type_one_of": ["geopolitical_disruption", "shipping_disruption", "geopolitical_attack"],
+      "severity_min": 2,
+      "severity_max": 3,
+      "confidence_max": 0.8
+    },
+    "test_roles": ["metamorphic_monotonicity"],
+    "pairs": [{"type": "monotonicity", "pair_id": "08", "assert": "severity_lte"}],
+    "notes": "Hedged, expert-opinion framing. Key quote: 'harm to global economy is modest.' Confidence should be lower than 02 (specific fatality event) because this article is deliberately measured. confidence_max: 0.8 encodes that — a very high confidence score would mean the pipeline ignored the hedged language. Assert severity(07) <= severity(08)."
+  },
+  {
+    "id": "08",
+    "file": "08_red_sea_full_escalation.txt",
+    "label": "Red Sea crisis full escalation, 57% drop in Suez traffic",
+    "source_url": "https://www.atlasinstitute.org/the-red-sea-shipping-crisis-2024-2025",
+    "expected": {
+      "entity_contains": "Red Sea",
+      "event_type_one_of": ["geopolitical_disruption", "shipping_disruption", "geopolitical_attack", "geopolitical_crisis"],
+      "severity_min": 4,
+      "severity_max": 5,
+      "confidence_min": 0.7
+    },
+    "test_roles": ["metamorphic_monotonicity"],
+    "pairs": [{"type": "monotonicity", "pair_id": "07", "assert": "severity_gte"}],
+    "notes": "Full escalation picture: 190+ attacks, 57.5% Suez traffic drop, freight rates spiked, supply chains rerouted. Assert severity(08) >= severity(07). Same event_type family as 07 — the test is ordering, not taxonomy."
+  },
+  {
+    "id": "09",
+    "file": "09_us_port_strike_resolved.txt",
+    "label": "US East Coast port strike resolution (tentative agreement)",
+    "source_url": "https://www.dcatvci.org/features/navigating-the-supply-chain-impacts-of-us-port-closings/",
+    "expected": {
+      "entity_contains": "ILA",
+      "event_type_one_of": ["labor_resolution", "strike_resolution", "labor_disruption"],
+      "severity_min": 2,
+      "severity_max": 3
+    },
+    "test_roles": ["metamorphic_negation"],
+    "pairs": [{"type": "negation", "pair_id": "03", "assert": "severity_lt"}],
+    "notes": "Resolution version of 03. Same entity, strike suspended. Severity must drop strictly below 03. event_type may stay as labor_disruption (tentative resolution, not full) or shift to labor_resolution — both are acceptable per event_type_one_of."
+  },
+  {
+    "id": "10",
+    "file": "10_panama_canal_drought.txt",
+    "label": "Panama Canal drought restrictions, shipping backlogs",
+    "source_url": "https://www.capstonelogistics.com/blog/supply-chain-disruptions-that-defined-2024/",
+    "expected": {
+      "entity_contains": "Panama Canal",
+      "event_type_one_of": ["infrastructure_disruption", "shipping_disruption", "supply_chain_disruption", "environmental_disruption"],
+      "severity_min": 3,
+      "severity_max": 4
+    },
+    "test_roles": ["entity_substitution", "structural"],
+    "pairs": [],
+    "notes": "Entity substitution anchor. Same event_type family as 03 (supply chain disruption) but completely different entity and cause. The test is that event_type_one_of overlaps with 03's set — severity is driven by event magnitude, not entity identity. Pipeline should NOT return ILA or port-related entities here."
+  }
+]
