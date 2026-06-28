@@ -18,7 +18,7 @@ dev = [
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_functions = ["test_*"]
-addopts = "-v -ra -s --junit-xml=test-results/results.xml"
+addopts = "-v -ra -s"
 
 [tool.hatch.build.targets.wheel]
 packages = ["pipeline"]

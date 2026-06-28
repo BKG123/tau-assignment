@@ -11,6 +11,9 @@ from __future__ import annotations
 
 import json
 import os
+import time
+from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from pathlib import Path
 
 import pytest
@@ -20,6 +23,25 @@ FIXTURES_DIR = ROOT / "data" / "fixtures"
 ARTICLES_DIR = FIXTURES_DIR / "articles"
 METADATA_FILE = FIXTURES_DIR / "metadata.json"
 CACHE_FILE = ROOT / ".cache" / "pipeline_results.json"
+RESULTS_FILE = ROOT / "test-results" / "results.md"
+
+
+@dataclass
+class _TestRecord:
+    nodeid: str
+    outcome: str
+    duration: float = 0.0
+    failure: str | None = None
+
+
+@dataclass
+class _SessionResults:
+    started_at: datetime | None = None
+    records: dict[str, _TestRecord] = field(default_factory=dict)
+
+
+_session_results = _SessionResults()
+_session_start: float | None = None
 
 
 def _load_metadata() -> list[dict]:
@@ -59,6 +81,123 @@ def pipeline_results() -> dict[str, dict]:
     CACHE_FILE.parent.mkdir(exist_ok=True)
     CACHE_FILE.write_text(json.dumps(results, indent=2))
     return results
+
+
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    report = outcome.get_result()
+    if report.when != "call" and not (report.failed and report.when == "setup"):
+        return
+
+    record = _session_results.records.setdefault(
+        item.nodeid,
+        _TestRecord(nodeid=item.nodeid, outcome="passed"),
+    )
+    record.duration += report.duration
+
+    if report.failed:
+        record.outcome = "failed"
+        record.failure = str(report.longrepr)
+    elif report.skipped:
+        record.outcome = "skipped"
+    elif record.outcome != "failed":
+        record.outcome = report.outcome
+
+
+def _format_duration(seconds: float) -> str:
+    if seconds >= 1:
+        return f"{seconds:.3f}s"
+    return f"{seconds * 1000:.0f}ms"
+
+
+def _status_icon(outcome: str) -> str:
+    return {
+        "passed": "passed",
+        "failed": "failed",
+        "skipped": "skipped",
+        "error": "error",
+    }.get(outcome, outcome)
+
+
+def _write_markdown_results(exitstatus: int, session_duration: float) -> None:
+    records = sorted(_session_results.records.values(), key=lambda r: r.nodeid)
+    counts = {"passed": 0, "failed": 0, "skipped": 0, "error": 0}
+    for record in records:
+        counts[record.outcome] = counts.get(record.outcome, 0) + 1
+
+    total = len(records)
+    total_duration = session_duration or sum(r.duration for r in records)
+    finished = datetime.now(timezone.utc)
+    started = _session_results.started_at or finished
+    started_local = started.astimezone()
+    finished_local = finished.astimezone()
+    overall = "passed" if exitstatus == 0 else "failed"
+
+    lines = [
+        f"# Test Results — {finished_local:%Y-%m-%d %H:%M:%S %Z}",
+        "",
+        f"- **Started:** {started_local.isoformat(timespec='seconds')}",
+        f"- **Finished:** {finished_local.isoformat(timespec='seconds')}",
+        f"- **Duration:** {_format_duration(total_duration)}",
+        f"- **Status:** {overall} ({counts['passed']} passed, "
+        f"{counts['failed']} failed, {counts['skipped']} skipped, "
+        f"{counts['error']} errors)",
+        "",
+        "## Summary",
+        "",
+        "| Metric | Count |",
+        "| --- | ---: |",
+        f"| Total | {total} |",
+        f"| Passed | {counts['passed']} |",
+        f"| Failed | {counts['failed']} |",
+        f"| Skipped | {counts['skipped']} |",
+        f"| Errors | {counts['error']} |",
+        "",
+        "## Tests",
+        "",
+        "| Test | Status | Duration |",
+        "| --- | --- | ---: |",
+    ]
+
+    for record in records:
+        test_name = record.nodeid.split("::", 1)[-1]
+        lines.append(
+            f"| `{test_name}` | {_status_icon(record.outcome)} | "
+            f"{_format_duration(record.duration)} |"
+        )
+
+    failures = [r for r in records if r.failure]
+    lines.extend(["", "## Failures", ""])
+    if failures:
+        for record in failures:
+            test_name = record.nodeid.split("::", 1)[-1]
+            lines.extend(
+                [
+                    f"### `{test_name}`",
+                    "",
+                    "```",
+                    record.failure or "",
+                    "```",
+                    "",
+                ]
+            )
+    else:
+        lines.append("_None_")
+
+    RESULTS_FILE.parent.mkdir(exist_ok=True)
+    RESULTS_FILE.write_text("\n".join(lines) + "\n")
+
+
+def pytest_sessionstart(session):
+    global _session_start
+    _session_start = time.perf_counter()
+    _session_results.started_at = datetime.now(timezone.utc)
+
+
+def pytest_sessionfinish(session, exitstatus):
+    duration = time.perf_counter() - _session_start if _session_start else 0.0
+    _write_markdown_results(exitstatus, duration)
 
 
 def pytest_terminal_summary(terminalreporter, exitstatus, config):
