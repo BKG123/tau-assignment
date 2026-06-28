@@ -136,7 +136,8 @@
       "entity_contains": ["Longshoremen", "ILA", "port"],
       "event_type_one_of": ["labor_resolution", "strike_resolution", "labor_disruption", "supply_chain_disruption"],
       "severity_min": 2,
-      "severity_max": 5
+      "severity_max": 5,
+      "event_type_known_ambiguous": true
     },
     "test_roles": ["metamorphic_negation"],
     "pairs": [{"type": "negation", "pair_id": "03", "assert": "severity_lte"}],
