@@ -21,12 +21,14 @@ What we DO assert:
   - Cross-field consistency: the model's own outputs must not contradict
     each other (these need no ground truth at all).
 """
+
 from __future__ import annotations
 
 
 # ---------------------------------------------------------------------------
 # Per-field boundary assertions (driven by metadata.expected)
 # ---------------------------------------------------------------------------
+
 
 def test_severity_within_bounds(pipeline_results, metadata):
     """Severity must fall within the [severity_min, severity_max] band."""
@@ -70,10 +72,13 @@ def test_confidence_within_bounds(pipeline_results, metadata):
 # membership is decided by keyword/substring matching on the event_type the
 # model emitted — not by exact-string sets. That way a synonym the test author
 # never enumerated (e.g. "earnings_shortfall", "corporate_bankruptcy") still
-# triggers the check instead of passing vacuously.
+# triggers the check instead of passing.
 # ---------------------------------------------------------------------------
 
-def _event_type_matches(event_type: str, any_of: tuple[str, ...], all_of: tuple[str, ...] = ()) -> bool:
+
+def _event_type_matches(
+    event_type: str, any_of: tuple[str, ...], all_of: tuple[str, ...] = ()
+) -> bool:
     """True if `event_type` contains any of `any_of` and all of `all_of` (case-insensitive)."""
     et = event_type.lower()
     any_ok = any(kw in et for kw in any_of) if any_of else True
@@ -86,22 +91,39 @@ def _is_earnings_family(event_type: str) -> bool:
         event_type,
         any_of=("miss", "decline", "shortfall", "drop", "fall", "soft", "weak"),
         all_of=(),
-    ) and _event_type_matches(event_type, any_of=("earning", "revenue", "profit", "sales"))
+    ) and _event_type_matches(
+        event_type, any_of=("earning", "revenue", "profit", "sales")
+    )
 
 
 def _is_bankruptcy_family(event_type: str) -> bool:
     return _event_type_matches(
         event_type,
-        any_of=("bankrupt", "chapter_11", "chapter11", "chapter_eleven",
-                "insolven", "liquidation", "receivership", "distress"),
+        any_of=(
+            "bankrupt",
+            "chapter_11",
+            "chapter11",
+            "chapter_eleven",
+            "insolven",
+            "liquidation",
+            "receivership",
+            "distress",
+        ),
     )
 
 
 def _is_resolution_family(event_type: str) -> bool:
     return _event_type_matches(
         event_type,
-        any_of=("resolution", "ceasefire", "resumption", "settle", "agreement",
-                "deescalation", "de_escalation"),
+        any_of=(
+            "resolution",
+            "ceasefire",
+            "resumption",
+            "settle",
+            "agreement",
+            "deescalation",
+            "de_escalation",
+        ),
     )
 
 
