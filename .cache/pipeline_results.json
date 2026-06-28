@@ -27,7 +27,7 @@
     "entity": "J.B. Hunt Transport Services",
     "event_type": "revenue_decline",
     "severity": 2,
-    "confidence": 0.93
+    "confidence": 0.94
   },
   "06": {
     "entity": "Houthis",
@@ -37,9 +37,9 @@
   },
   "07": {
     "entity": "Red Sea",
-    "event_type": "shipping_disruption",
+    "event_type": "geopolitical_disruption",
     "severity": 4,
-    "confidence": 0.92
+    "confidence": 0.91
   },
   "08": {
     "entity": "Houthi",
