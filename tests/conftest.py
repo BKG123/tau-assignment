@@ -59,3 +59,42 @@ def pipeline_results() -> dict[str, dict]:
     CACHE_FILE.parent.mkdir(exist_ok=True)
     CACHE_FILE.write_text(json.dumps(results, indent=2))
     return results
+
+
+def pytest_terminal_summary(terminalreporter, exitstatus, config):
+    """Print a table of every fixture's pipeline output vs. its expected bounds.
+
+    Gives a single at-a-glance view of what the pipeline produced this run,
+    rendered after the test results.
+    """
+    if not CACHE_FILE.exists():
+        return
+    try:
+        results = json.loads(CACHE_FILE.read_text())
+        fixtures = _load_metadata()
+    except Exception:
+        return
+
+    tr = terminalreporter
+    tr.write_sep("=", "PIPELINE OUTPUTS")
+    header = f"{'id':<3} {'entity':<26} {'event_type':<22} {'sev':>3} {'conf':>5}  expected"
+    tr.write_line(header)
+    tr.write_line("-" * len(header))
+
+    for fx in fixtures:
+        r = results.get(fx["id"])
+        if not r:
+            continue
+        exp = fx["expected"]
+        sev_band = f"sev[{exp.get('severity_min', '-')}-{exp.get('severity_max', '-')}]"
+        conf_band = ""
+        if "confidence_min" in exp:
+            conf_band += f" conf>={exp['confidence_min']}"
+        if "confidence_max" in exp:
+            conf_band += f" conf<={exp['confidence_max']}"
+        entity = (r["entity"][:25]) if len(r["entity"]) > 25 else r["entity"]
+        etype = (r["event_type"][:21]) if len(r["event_type"]) > 21 else r["event_type"]
+        tr.write_line(
+            f"{fx['id']:<3} {entity:<26} {etype:<22} {r['severity']:>3} "
+            f"{r['confidence']:>5.2f}  {sev_band}{conf_band}"
+        )

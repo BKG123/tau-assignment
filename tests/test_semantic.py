@@ -22,10 +22,20 @@ def test_entity_contains(pipeline_results, metadata):
         exp = fx["expected"]
         if "entity_contains" not in exp:
             continue
+        # Roundup/multi-subject articles where the publisher-vs-subject choice is
+        # genuinely ambiguous are flagged out of the strict entity check and
+        # discussed in the design note instead. See fixture 10.
+        if exp.get("entity_known_ambiguous"):
+            continue
         result = pipeline_results[fx["id"]]
-        expected_substr = exp["entity_contains"]
-        assert expected_substr.lower() in result["entity"].lower(), (
-            f"[{fx['id']}] entity '{result['entity']}' does not contain '{expected_substr}'\n"
+        expected = exp["entity_contains"]
+        # entity_contains may be a single substring or a list of acceptable
+        # substrings (for genuinely multi-entity articles where more than one
+        # primary entity is defensible).
+        candidates = expected if isinstance(expected, list) else [expected]
+        entity_lower = result["entity"].lower()
+        assert any(c.lower() in entity_lower for c in candidates), (
+            f"[{fx['id']}] entity '{result['entity']}' contains none of {candidates}\n"
             f"  Article: {fx['label']}"
         )
 

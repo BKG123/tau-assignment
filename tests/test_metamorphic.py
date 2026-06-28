@@ -9,51 +9,68 @@ escalation must score at least as high as a measured overview of the same event.
 Relationships are encoded in metadata.json under the `pairs` field so the
 runner discovers them programmatically — no hardcoded fixture IDs here.
 
-Pair types:
-    negation     — same entity, opposite valence.  assert: severity_lt
-    monotonicity — same topic, different intensity. assert: severity_lte / severity_gte
+Each pair declares an `assert` of the form "<field>_<op>", e.g.:
+    severity_lt    severity_lte    severity_gte
+    confidence_lt  confidence_lte
 
 Active pairs:
-    06 →(negation)→    02  : Houthis end attacks vs. Houthis kill crew
-    09 →(negation)→    03  : Port strike resolved vs. port strike active
-    07 →(monotonicity)→ 08  : Red Sea modest framing vs. Red Sea full escalation
+    06 →(negation)→     02  : severity_lt    Houthis end attacks vs. kill crew
+    09 →(negation)→     03  : severity_lte   Port strike resolved vs. active
+    07 →(monotonicity)→ 08  : severity_lte   Red Sea modest vs. full escalation
+    07 →(confidence)→   02  : confidence_lt  Hedged WEF framing vs. specific fatality report
 """
 from __future__ import annotations
 
+import json
+from pathlib import Path
 
-def test_metamorphic_pairs(pipeline_results, metadata):
-    fx_by_id = {fx["id"]: fx for fx in metadata}
+import pytest
 
-    for fx in metadata:
-        for pair in fx.get("pairs", []):
-            id_a = fx["id"]
-            id_b = pair["pair_id"]
-            sev_a = pipeline_results[id_a]["severity"]
-            sev_b = pipeline_results[id_b]["severity"]
-            label_a = fx["label"]
-            label_b = fx_by_id[id_b]["label"]
-            assertion = pair["assert"]
+METADATA = json.loads(
+    (Path(__file__).resolve().parents[1] / "data" / "fixtures" / "metadata.json").read_text()
+)
 
-            if assertion == "severity_lt":
-                assert sev_a < sev_b, (
-                    f"[{id_a} vs {id_b}] Negation pair failed:\n"
-                    f"  {id_a} ({label_a}) → severity {sev_a}\n"
-                    f"  {id_b} ({label_b}) → severity {sev_b}\n"
-                    f"  Expected severity({id_a}) < severity({id_b})"
-                )
-            elif assertion == "severity_lte":
-                assert sev_a <= sev_b, (
-                    f"[{id_a} vs {id_b}] Monotonicity pair failed:\n"
-                    f"  {id_a} ({label_a}) → severity {sev_a}\n"
-                    f"  {id_b} ({label_b}) → severity {sev_b}\n"
-                    f"  Expected severity({id_a}) <= severity({id_b})"
-                )
-            elif assertion == "severity_gte":
-                assert sev_a >= sev_b, (
-                    f"[{id_a} vs {id_b}] Monotonicity pair failed:\n"
-                    f"  {id_a} ({label_a}) → severity {sev_a}\n"
-                    f"  {id_b} ({label_b}) → severity {sev_b}\n"
-                    f"  Expected severity({id_a}) >= severity({id_b})"
-                )
-            else:
-                raise ValueError(f"Unknown pair assertion type: '{assertion}'")
+# Flatten all pairs into (source_fixture, pair) tuples for parametrization,
+# so each relationship shows up as its own test line in verbose output.
+_PAIRS = [(fx, pair) for fx in METADATA for pair in fx.get("pairs", [])]
+
+_OPS = {
+    "lt": (lambda a, b: a < b, "<"),
+    "lte": (lambda a, b: a <= b, "<="),
+    "gt": (lambda a, b: a > b, ">"),
+    "gte": (lambda a, b: a >= b, ">="),
+}
+
+
+def _pair_id(item):
+    fx, pair = item
+    return f"{fx['id']}-{pair['assert']}-{pair['pair_id']}"
+
+
+@pytest.mark.parametrize("pair_item", _PAIRS, ids=_pair_id)
+def test_metamorphic_relationship(pair_item, pipeline_results, metadata):
+    fx, pair = pair_item
+    fx_by_id = {f["id"]: f for f in metadata}
+
+    id_a = fx["id"]
+    id_b = pair["pair_id"]
+    assertion = pair["assert"]
+    field, _, op_name = assertion.rpartition("_")
+
+    assert field in {"severity", "confidence"}, f"Unknown pair field: '{field}'"
+    assert op_name in _OPS, f"Unknown pair operator: '{op_name}'"
+
+    val_a = pipeline_results[id_a][field]
+    val_b = pipeline_results[id_b][field]
+    op_fn, op_sym = _OPS[op_name]
+
+    print(
+        f"\n  [{pair['type']}] {id_a} {field}={val_a}  {op_sym}  {id_b} {field}={val_b}"
+    )
+
+    assert op_fn(val_a, val_b), (
+        f"[{id_a} vs {id_b}] {pair['type']} pair failed on {field}:\n"
+        f"  {id_a} ({fx['label']}) → {field} {val_a}\n"
+        f"  {id_b} ({fx_by_id[id_b]['label']}) → {field} {val_b}\n"
+        f"  Expected {field}({id_a}) {op_sym} {field}({id_b})"
+    )

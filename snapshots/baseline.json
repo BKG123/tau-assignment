@@ -1,0 +1,62 @@
+{
+  "01": {
+    "entity": "STG Logistics, Inc.",
+    "event_type": "chapter_11",
+    "severity": 4,
+    "confidence": 0.97
+  },
+  "02": {
+    "entity": "Houthi rebels",
+    "event_type": "geopolitical_attack",
+    "severity": 4,
+    "confidence": 0.93
+  },
+  "03": {
+    "entity": "International Longshoremen\u2019s Association",
+    "event_type": "port_strike",
+    "severity": 4,
+    "confidence": 0.95
+  },
+  "04": {
+    "entity": "Halliburton",
+    "event_type": "revenue_decline",
+    "severity": 2,
+    "confidence": 0.93
+  },
+  "05": {
+    "entity": "J.B. Hunt Transport Services",
+    "event_type": "revenue_decline",
+    "severity": 2,
+    "confidence": 0.94
+  },
+  "06": {
+    "entity": "Houthis",
+    "event_type": "geopolitical_resolution",
+    "severity": 3,
+    "confidence": 0.88
+  },
+  "07": {
+    "entity": "Red Sea",
+    "event_type": "geopolitical_disruption",
+    "severity": 4,
+    "confidence": 0.91
+  },
+  "08": {
+    "entity": "Houthi",
+    "event_type": "geopolitical_disruption",
+    "severity": 4,
+    "confidence": 0.92
+  },
+  "09": {
+    "entity": "US Gulf and East Coast ports",
+    "event_type": "labor_disruption",
+    "severity": 4,
+    "confidence": 0.93
+  },
+  "10": {
+    "entity": "Capstone Logistics",
+    "event_type": "supply_chain_disruption",
+    "severity": 3,
+    "confidence": 0.78
+  }
+}
