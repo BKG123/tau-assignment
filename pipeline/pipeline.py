@@ -30,8 +30,15 @@ Given a news article, extract a structured risk signal as a JSON object with exa
     3 = moderate — regional or single-sector impact, recoverable
     4 = significant — multi-sector or sustained disruption, material financial impact
     5 = severe — systemic, catastrophic, or irreversible impact
-- confidence: float 0.0–1.0 representing how clearly the article supports your extraction
-    (lower for vague, hedged, or opinion-heavy articles; higher for specific facts, named entities, and quantified impacts)
+- confidence: float 0.0–1.0 measuring the *article's information density*, not your own extraction ability.
+    Ask: how clearly and specifically does this article signal the event's entity, type, and magnitude?
+    Calibrate against this scale — do not cluster near 1.0:
+      0.3–0.5 = vague or opinion-heavy; no named entities; language is heavily hedged ("could", "may", "experts suggest")
+      0.5–0.65 = some specific facts but mixed with speculation, limited scope, or secondhand framing
+      0.65–0.80 = clear reporting with named entities and some quantified impacts
+      0.80–0.90 = specific facts, named entities, hard numbers, direct quotes from principals
+      0.90–0.95 = near-perfect specificity — named company, exact date, precise figures, direct attribution
+    Reserve values above 0.95 only when the article reads like a primary source (press release, court filing, earnings release).
 
 Return only valid JSON. No explanation, no markdown, no extra keys."""
 
